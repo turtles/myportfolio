@@ -16,10 +16,11 @@ const Header = props => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
-        minHeight: '6rem',
+        display: 'flex',
+        justifyContent: 'space-between'
       }}
     >
-      <div style={{width: '50%', float: 'left'}}>
+      <div>
         <h1 style={{ margin: 0 }}>
           <Link
             to="/"
@@ -39,11 +40,11 @@ const Header = props => (
           Software Developer
         </h5>
       </div>
-      <div style={{marginLeft: '50%', width:'30%'}}>
+      <div>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/projects/">Projects</NavLink>
       </div>
-      <div style={{float:'right'}}>
+      <div>
         <SocialLink site='github'/>
         <SocialLink site='twitter'/>
       </div>

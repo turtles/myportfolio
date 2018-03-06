@@ -6,9 +6,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
+        <p>tons of coffee for everyone!</p>
         <a href="https://www.github.com/">source</a>
       </div>
     );
