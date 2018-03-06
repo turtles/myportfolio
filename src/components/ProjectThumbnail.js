@@ -38,8 +38,8 @@ class ProjectThumbnail extends React.Component {
             style={{
               marginBottom: "0.5em",
             }}
-          >{this.props.children}</p>
-          <Link to={this.props.to}>More</Link>
+          >{this.props.description}</p>
+          <Link to='/projects/'>More</Link>
         </div>
       </div>
     )

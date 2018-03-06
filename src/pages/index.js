@@ -6,7 +6,6 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div>
-        <ProjectsList/>
         <a href="https://www.github.com/">source</a>
       </div>
     );
