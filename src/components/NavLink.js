@@ -21,7 +21,7 @@ const NavLink = props => (
       borderColor: 'black'
     }}
     exact={true}
-    >
+  >
   {props.children}</Link>
 )
 

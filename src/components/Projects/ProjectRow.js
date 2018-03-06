@@ -30,6 +30,8 @@ const ProjectRow = props => (
               key={i}
               title={project.title}
               description={project.description}
+              links={project.links}
+              img={project.img}
             />);
           }
         }

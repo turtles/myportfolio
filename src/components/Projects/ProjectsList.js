@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Img from 'gatsby-image'
 import ProjectThumbnail from './ProjectThumbnail'
 import ProjectRow from './ProjectRow'
 
@@ -13,17 +12,31 @@ class ProjectList extends React.Component {
         {
           title:'Notecards',
           description:'Notecard studying app created with Redux. Lets you define notecards, with export/import options, and study from them.',
-          skill: 'React'
+          skill: 'React',
+          links: [
+            ['Demo', 'https://turtles.github.io/notecards/'],
+            ['Source', 'https://github.com/turtles/notecards']
+          ],
+          img: 'project1'
         },
         {
           title:'Interval Timer',
           description:'A timer that plays a sound on an interval to remind you that it is running.',
-          skill: 'React'
+          skill: 'React',
+          links: [
+            ['Demo', 'https://turtles.github.io/react-app-interval-timer/'],
+            ['Source', 'https://github.com/turtles/react-app-interval-timer']
+          ],
+          img: 'project2'
         },
         {
           title:'Bricks in Pieces',
           description:'3D brick breaker for Android. Optimized for the platform and full of content!',
-          skill: 'Unity'
+          skill: 'Unity',
+          links: [
+            ['Google Play', 'https://play.google.com/store/apps/details?id=com.LeahsGames.BricksInPieces'],
+          ],
+          img: 'project3'
         },
       ]
     };
