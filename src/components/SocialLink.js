@@ -7,17 +7,19 @@ class SocialLink extends React.Component {
     super(props);
 
     if (props.site==='github') {
-      this.state = {iconName: 'logo-github'}
+      this.state = {iconName: 'logo-github', href: 'https://github.com/turtles'}
     }
 
     if (props.site==='twitter') {
-      this.state = {iconName: 'logo-twitter'}
+      this.state = {iconName: 'logo-twitter', href: 'https://twitter.com/parakeetage'}
     }
   }
   render() {
     return (
-      <Link
-        to={this.props.to}
+      <a
+        href={this.state.href}
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           color: 'black',
           textDecoration: 'none',
@@ -30,7 +32,7 @@ class SocialLink extends React.Component {
           borderStyle: 'solid',
           display: 'inline-block'
         }}>
-      <Ionicon icon={this.state.iconName} fontSize="1.5em"/></Link>
+      <Ionicon icon={this.state.iconName} fontSize="1.5em"/></a>
     );
   }
 }
