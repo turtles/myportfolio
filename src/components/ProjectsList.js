@@ -21,11 +21,6 @@ class ProjectList extends React.Component {
           skill: 'React'
         },
         {
-          title:'Python Scripts',
-          description:'A small collection of Python 3 scripts.',
-          skill: 'Python'
-        },
-        {
           title:'Bricks in Pieces',
           description:'3D brick breaker for Android. Optimized for the platform and full of content!',
           skill: 'Unity'

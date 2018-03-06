@@ -10,7 +10,7 @@ class IndexPage extends React.Component {
       <div>
         <Bio>
           <h2>Web and Mobile Development ahoy!</h2>
-          <p>I'm passionate about modern web and mobile techonologies such as React, React Native, Node, Express, and GraphQL.</p>
+          <p>I'm passionate about modern web and mobile techonologies such as React, React Native, Node, and Express.</p>
           <p>Mobile game development is a side interest, with my engine of choice being Unity.</p>
         </Bio>
         <SourceLinkBlock/>
