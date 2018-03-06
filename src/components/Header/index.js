@@ -8,7 +8,6 @@ const Header = props => (
   <div
     style={{
       background: 'white',
-      marginBottom: '1.45rem',
     }}
   >
     <div
