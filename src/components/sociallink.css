@@ -1,0 +1,15 @@
+.socialLink {
+  color: black;
+  text-decoration: none;
+  border-color: #CCC;
+  border-radius: 999px;
+  padding: 6px;
+  line-height:.8em;
+  margin: 4px;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+}
+.socialLink:hover {
+  border-color: #888;
+}

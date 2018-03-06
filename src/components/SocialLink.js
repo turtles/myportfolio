@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Ionicon from 'react-ionicons'
+import './sociallink.css'
 
 class SocialLink extends React.Component {
   constructor(props) {
@@ -20,19 +21,10 @@ class SocialLink extends React.Component {
         href={this.state.href}
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          color: 'black',
-          textDecoration: 'none',
-          borderColor: '#CCCCCC',
-          borderRadius: 999,
-          padding: 6,
-          lineHeight:'.8em',
-          margin: 4,
-          borderWidth: 1,
-          borderStyle: 'solid',
-          display: 'inline-block'
-        }}>
-      <Ionicon icon={this.state.iconName} fontSize="1.5em"/></a>
+        className="socialLink"
+      >
+        <Ionicon icon={this.state.iconName} fontSize="1.5em"/>
+      </a>
     );
   }
 }

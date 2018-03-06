@@ -16,7 +16,12 @@ const NavLink = props => (
       borderWidth: 1,
       borderStyle: 'solid',
       display: 'inline-block'
-    }}>
+    }}
+    activeStyle={{
+      borderColor: 'black'
+    }}
+    exact={true}
+    >
   {props.children}</Link>
 )
 
