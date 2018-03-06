@@ -12,6 +12,7 @@ class TemplateWrapper extends React.Component {
           maxWidth: '960',
           margin: 'auto',
           marginTop: '4rem',
+          marginBottom: '4rem',
           background:'white',
           boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09)',
         }}>
