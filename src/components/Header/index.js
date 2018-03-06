@@ -19,7 +19,7 @@ const Header = props => (
         justifyContent: 'space-between'
       }}
     >
-      <div>
+      <div style={{paddingLeft:'0.25em'}}>
         <h1 style={{ margin: 0 }}>
           <Link
             to="/"
