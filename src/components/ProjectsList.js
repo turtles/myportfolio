@@ -11,23 +11,23 @@ class ProjectList extends React.Component {
     this.state = {
       projects: [
         {
-          title:'project 1',
-          description:'short description here please',
+          title:'Notecards',
+          description:'Notecard studying app created with Redux. Lets you define notecards, with export/import options, and study from them.',
           skill: 'React'
         },
         {
-          title:'project 2',
-          description:'short description here please',
+          title:'Interval Timer',
+          description:'A timer that plays a sound on an interval to remind you that it is running.',
           skill: 'React'
         },
         {
-          title:'project 3',
-          description:'short description here please',
+          title:'Python Scripts',
+          description:'A small collection of Python 3 scripts.',
           skill: 'Python'
         },
         {
-          title:'project 4',
-          description:'short description here please',
+          title:'Bricks in Pieces',
+          description:'3D brick breaker for Android. Optimized for the platform and full of content!',
           skill: 'Unity'
         },
       ]
