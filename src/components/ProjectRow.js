@@ -4,12 +4,22 @@ import ProjectThumbnail from './ProjectThumbnail'
 
 const ProjectRow = props => (
   <div>
-    <h3>{props.skill}</h3>
+    <div style={{
+      display:'block',
+      width: '100%',
+      textAlign:'center'
+    }}>
+    <h2 style={{
+        margin: '0 0.5em 0.5em 0.5em'
+      }}
+    >{props.skill}</h2>
+    </div>
     <div
       style={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'left'
+          justifyContent: 'left',
+          marginBottom:'1.25em'
         }}>
     {
       props.projects.map(
