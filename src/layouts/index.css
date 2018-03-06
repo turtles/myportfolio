@@ -308,6 +308,12 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
+::selection {
+  background: #FFDDB7;
+}
+::-moz-selection {
+  background: #FFDDB7;
+}
 hgroup {
   margin-left: 0;
   margin-right: 0;
