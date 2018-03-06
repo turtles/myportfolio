@@ -36,7 +36,7 @@ const Header = props => (
             color: 'black',
             textDecoration: 'none',
           }}>
-          Software Developer
+          Software Engineer
         </h5>
       </div>
       <div>
