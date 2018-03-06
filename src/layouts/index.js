@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
-import { rhythm, scale, options } from 'gatsby-plugin-typography'
 
 class TemplateWrapper extends React.Component {
   render() {

@@ -7,10 +7,12 @@ const NavLink = props => (
     style={{
       color: 'black',
       textDecoration: 'none',
+      fontWeight:300,
+      textTransform: 'uppercase',
       borderColor: '#CCCCCC',
       borderRadius: 8,
-      padding: 4,
-      margin: 4,
+      padding: 6,
+      margin: 8,
       borderWidth: 1,
       borderStyle: 'solid',
       display: 'inline-block'

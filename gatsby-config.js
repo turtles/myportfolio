@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Leah Sandacz',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-typography`,
     `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -22,6 +21,13 @@ module.exports = {
         path: `${__dirname}/src/img/`,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `lato\:300,400`
+        ]
+      }
+    }
   ],
 };
