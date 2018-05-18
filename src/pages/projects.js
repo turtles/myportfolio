@@ -21,8 +21,8 @@ query ProjectsQuery {
         frontmatter {
           thumbnail {
             childImageSharp {
-              resolutions(width: 380, height: 290) {
-                ...GatsbyImageSharpResolutions_noBase64
+              sizes(maxWidth: 380, maxHeight: 290, cropFocus: CENTER) {
+                ...GatsbyImageSharpSizes
               }
             }
           }

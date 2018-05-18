@@ -10,14 +10,14 @@ export default ({frontmatter}) => {
   return (
     <div
       style={{
-        width:"50%",
-        padding: 10,
+        width:'50%',
+        padding: '1em',
         boxSizing:'border-box',
         textAlign:'center',
       }}
     >
       <Img
-        resolutions={frontmatter.thumbnail.childImageSharp.resolutions}
+        sizes={frontmatter.thumbnail.childImageSharp.sizes}
         style={{
           borderRadius: 8
         }}
@@ -36,12 +36,16 @@ export default ({frontmatter}) => {
             marginBottom: "0.5em",
           }}
         >{frontmatter.subtitle}</p>
-        <a href={frontmatter.siteLink}
-          style={LinkStyle}
-          target="_blank"
-          rel="noopener noreferrer">
-          {frontmatter.siteName}
-        </a>
+        {
+          frontmatter.siteLink ? (
+            <a href={frontmatter.siteLink}
+              style={LinkStyle}
+              target="_blank"
+              rel="noopener noreferrer">
+              {frontmatter.siteName}
+            </a>
+          ) : null
+        }
         {
           frontmatter.sourceLink ? (
             <a href={frontmatter.sourceLink}

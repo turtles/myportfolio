@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ProjectThumbnail from './ProjectThumbnail'
+import ProjectListItem from './ProjectListItem'
 
 const ProjectRow = props => (
   <div>
@@ -26,7 +26,7 @@ const ProjectRow = props => (
         ({node: project},i)=>{
           const {frontmatter} = project;
           if (frontmatter.skill === props.skill) {
-            return (<ProjectThumbnail
+            return (<ProjectListItem
                 key={i}
                 frontmatter={frontmatter}
               />);
