@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 import picture from '../img/picture.png'
 
 const Bio = props => (
@@ -11,7 +12,11 @@ const Bio = props => (
     <div style={{
       width:'30%'
     }}>
-      <img src={picture}/>
+      <Img sizes={props.sizes}
+        style={{
+          borderRadius: 8
+        }}
+      />
     </div>
     <div
       style={{
