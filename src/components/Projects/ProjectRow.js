@@ -23,16 +23,16 @@ const ProjectRow = props => (
         }}>
     {
       props.projects.map(
-        (project,i)=>{
-          if (project.skill === props.skill)
-          {
+        ({node: project},i)=>{
+          const {frontmatter} = project;
+          if (frontmatter.skill === props.skill) {
             return (<ProjectThumbnail
-              key={i}
-              title={project.title}
-              description={project.description}
-              links={project.links}
-              img={project.img}
-            />);
+                key={i}
+                frontmatter={frontmatter}
+              />);
+          }
+          else {
+            return null;
           }
         }
       )

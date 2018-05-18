@@ -4,21 +4,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-image`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `img`,
-        path: `${__dirname}/src/img/`,
       },
     },
     {
@@ -28,6 +20,26 @@ module.exports = {
           `lato\:300,400`
         ]
       }
-    }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
+          {
+            resolve: `gatsby-remark-embed-youtube`,
+            options: {
+              width: 800,
+              height: 400
+            },
+          },
+        ],
+      },
+    },
   ],
 };
