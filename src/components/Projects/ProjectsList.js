@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ProjectThumbnail from './ProjectThumbnail'
 import ProjectRow from './ProjectRow'
 
 class ProjectList extends React.Component {
