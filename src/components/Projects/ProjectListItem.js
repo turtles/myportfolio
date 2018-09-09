@@ -24,7 +24,7 @@ export default ({frontmatter}) => {
       />
       <div style={{
           textAlign:'left',
-          padding: '0 1em',
+          padding: '1em 0.5em',
         }}
       >
         <h4 style={{
